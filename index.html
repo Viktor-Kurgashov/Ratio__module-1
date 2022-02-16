@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="warehouse, save, data, security, storage, area">
-  <meta name="description" content="Data Warehouse is a data storage area that has been tested for security, 
+  <meta name="description" content="Data Warehouse is a data storage area that has been tested for security,
     so you can store your data here safely but not be afraid of being stolen by others.">
   <title>Warehouse - Save your data storage here</title>
 
@@ -30,6 +30,7 @@
 
 
 <body>
+<!-- тут должен быть header, а внутри  nav -->
   <nav class="nav-wrapper">
     <div class="page-nav _content _f-row">
       <div class="logo">
@@ -43,8 +44,9 @@
   </nav>
 
 
-
+<!-- это section -->
   <header class="header-wrapper">
+<!-- _content _f-col-cntr? это не по БЭМ  -->
     <div class="page-header _content _f-col-cntr">
       <h1 class="header-title">Save your data storage here</h1>
       <p class="header-text">Data Warehouse is a data storage area that has been tested for security, so you
@@ -61,8 +63,8 @@
     <div class="about _content _f-col-cntr">
       <h2 class="about-header">We are a high-level data storage bank</h2>
       <img class="about-image" src="about/about-image.png" alt="">
-      <p class="about-text">The place to store various data that you can access at any time through the internet and where 
-        you can carry it. This very flexible storage area has a high level of security. To enter into your own data 
+      <p class="about-text">The place to store various data that you can access at any time through the internet and where
+        you can carry it. This very flexible storage area has a high level of security. To enter into your own data
         you must enter the password that you created when you registered in this Data Warehouse.</p>
     </div>
   </section>
@@ -76,16 +78,19 @@
     <ul class="features-list _f-col">
       <li class="features-item _f-col">
         <img class="features-item__image" src="features/images/image1.png" alt="">
+<!--    тут заголовок, не абзац, тэг р тут не уместен и тд ниже   -->
         <p class="features-item__title">Search Data</p>
-        <p class="features-item__text">Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful 
+        <p class="features-item__text">Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful
           for making it easier to find data effectively saving time.</p>
+<!--   для тега а не src, href и тд ниже   -->
         <a class="features-item__link" src="">Learn more</a>
       </li>
 
       <li class="features-item _f-col">
+<!--   alt должен быть заполнен     -->
         <img class="features-item__image" src="features/images/image2.png" alt="">
         <p class="features-item__title">24 Hour Access</p>
-        <p class="features-item__text">Access is given 24 hours a full morning to night and meet again in the morning, giving you 
+        <p class="features-item__text">Access is given 24 hours a full morning to night and meet again in the morning, giving you
           comfort when you need data when urgent.</p>
         <a class="features-item__link" src="">Learn more</a>
       </li>
@@ -100,7 +105,7 @@
       <li class="features-item _f-col">
         <img class="features-item__image" src="features/images/image4.png" alt="">
         <p class="features-item__title">Security Code</p>
-        <p class="features-item__text">Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured 
+        <p class="features-item__text">Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured
           with a code or password that you created, so only you can open the file.</p>
         <a class="features-item__link" src="">Learn more</a>
       </li>
@@ -126,6 +131,7 @@
 
           <li class="reviews-item">
             <div class="reviews-item__author">
+<!--     тут именование по БЭМ         -->
               <img class="reviews-item__avatar" src="reviews/avatar2.png" alt="">
               <p class="reviews-item__name">Jeny Doe</p>
               <p class="reviews-item__job">UX Engineer</p>
@@ -145,7 +151,6 @@
           </li>
         </ul>
       </div>
-
       <div class="reviews-controls _f-row">
         <button class="reviews-controls__button" onclick="moveLeft()"></button>
         <div class="reviews-controls__markers _f-row">
@@ -168,9 +173,14 @@
         <p class="logo__title">DataWarehouse</p>
       </div>
       <div class="footer-info">
+<!--    в данной ситуации для кнопок надо предусмотреть span с текстом который скрыть visually-hidden, если стили не подгрузятся, то пользователю будет не понятен функционал    -->        <a class="footer-info__link" href=""></a>
         <a class="footer-info__link" href=""></a>
         <a class="footer-info__link" href=""></a>
-        <a class="footer-info__link" href=""></a>
+<!--
+почта, телефон через ссылку
+<a href="mailto:mail@mail.ru">Напишите нам</a>
+<a href="tel:+79001111111">+7-900-111-11-11</a>
+-->
         <p class="footer-info__email">info@warehouse.project</p>
         <p class="footer-info__phone">1-232-3434</p>
       </div>
