@@ -1,6 +1,10 @@
+// через , не задаеются переменные (это плохой "тон") каждой переменой let, а в данном случае const!
+// btnLeft, btnRight - не применяются в коде
 let stack = document.getElementsByClassName('reviews-list')[0],
   btnLeft = document.getElementsByClassName('reviews-controls__button')[0],
   btnRight = document.getElementsByClassName('reviews-controls__button')[1];
+
+
 
 function moveRight() {
   if (window.matchMedia('(max-width: 640px)').matches) {
